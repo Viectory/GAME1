@@ -27,7 +27,7 @@ bool AppDelegate::applicationDidFinishLaunching() {
     auto director = Director::getInstance();
     auto glview = director->getOpenGLView();
     if(!glview) {
-        glview = GLViewImpl::createWithRect("RunWhatEver", Rect(0, 0, 960, 640));
+        glview = GLViewImpl::createWithRect("NewCocosProject", Rect(0, 0, 960, 640));
         director->setOpenGLView(glview);
     }
 
@@ -46,7 +46,6 @@ bool AppDelegate::applicationDidFinishLaunching() {
 
     // run
     director->runWithScene(scene);
-
 
     return true;
 }
